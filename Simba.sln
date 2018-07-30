@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simba", "Simba\Simba.csproj", "{256B9204-7453-4179-8CA7-6237D8D0C550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simba.Tests", "Simba.Tests\Simba.Tests.csproj", "{CDD589F5-6397-4737-962F-922A18CE6AE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{256B9204-7453-4179-8CA7-6237D8D0C550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256B9204-7453-4179-8CA7-6237D8D0C550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256B9204-7453-4179-8CA7-6237D8D0C550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256B9204-7453-4179-8CA7-6237D8D0C550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD589F5-6397-4737-962F-922A18CE6AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD589F5-6397-4737-962F-922A18CE6AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD589F5-6397-4737-962F-922A18CE6AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD589F5-6397-4737-962F-922A18CE6AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B232422-5A23-4E40-9827-ECD27A0F6126}
+	EndGlobalSection
+EndGlobal
