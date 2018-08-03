@@ -4,6 +4,8 @@ namespace Simba.Contracts
 {
     public interface ILatexContainer
     {
-        ICollection<ILatexElement> Elements { get; }
+        IReadOnlyCollection<ILatexElement> Elements { get; }
+
+        void AddElement(ILatexElement element);
     }
 }
