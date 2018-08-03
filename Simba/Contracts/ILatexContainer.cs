@@ -2,10 +2,10 @@
 
 namespace Simba.Contracts
 {
-    public interface ILatexContainer
+    public interface ILatexContainer<T>
     {
-        IReadOnlyCollection<ILatexElement> Elements { get; }
+        IReadOnlyList<T> Elements { get; }
 
-        void AddElement(ILatexElement element);
+        void AddElement(T element);
     }
 }

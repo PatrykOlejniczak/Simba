@@ -4,6 +4,6 @@ namespace Simba.Contracts
 {
     public interface ILatexRequiredModified : ILatexElement
     {
-        IReadOnlyCollection<ILatexElement> RequiredModifiers { get; }
+        IReadOnlyList<ILatexElement> RequiredModifiers { get; }
     }
 }

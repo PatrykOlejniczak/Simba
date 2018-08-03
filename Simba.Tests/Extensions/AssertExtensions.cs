@@ -6,7 +6,7 @@ namespace Simba.Tests.Extensions
 {
     public static class AssertExtensions
     {
-        public static void CompareLatex(string expected, string actual)
+        public static void CompareLatex(string actual, string expected)
         {
             var normalizeExpected
                     = new string(expected.Where(c => Char.IsWhiteSpace(c) == false).ToArray());

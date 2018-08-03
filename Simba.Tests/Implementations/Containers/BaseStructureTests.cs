@@ -1,23 +1,24 @@
-﻿using Simba.Implementations.BaseElements;
+﻿using Simba.Contracts;
+using Simba.Implementations.BaseElements;
 using Simba.Implementations.Containers;
 using Simba.Tests.Extensions;
 using Xunit;
 
 namespace Simba.Tests.Implementations.Containers
 {
-    public class ContainerMock : BaseContainer
+    public class StructureMock : BaseStructure<ILatexElement>
     {
         protected override string BeginMacroValue => "ContainerBeginValue";
         protected override string EndMacroValue => "ContainerEndValue";
         protected override string ElementSeparatorMacro => "ContainerSeparatorValue";
     }
 
-    public class BaseContainerTests
+    public class BaseStructureTests
     {
         [Fact]
         public void AddElement_CorrectAddElemntToGroup()
         {
-            var container = new ContainerMock();
+            var container = new StructureMock();
             container.AddElement(new SimpleText("New element"));
 
             Assert.Equal(1, container.Elements.Count);
@@ -26,7 +27,7 @@ namespace Simba.Tests.Implementations.Containers
         [Fact]
         public void GetLatex_ContainerWithSingleElement_CorrectGenerateLatexCode()
         {
-            var container = new ContainerMock();
+            var container = new StructureMock();
             container.AddElement(new SimpleText("New element"));
 
             AssertExtensions.CompareLatex(container.GetLatex(),
@@ -41,7 +42,7 @@ namespace Simba.Tests.Implementations.Containers
         [Fact]
         public void GetLatex_ContainerWithMultipleElement_CorrectGenerateLatexCode()
         {
-            var container = new ContainerMock();
+            var container = new StructureMock();
             container.AddElement(new SimpleText("New element v1"));
             container.AddElement(new SimpleText("New element v2"));
 

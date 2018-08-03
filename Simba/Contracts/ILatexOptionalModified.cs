@@ -4,6 +4,6 @@ namespace Simba.Contracts
 {
     public interface ILatexOptionalModified : ILatexElement
     {
-        IReadOnlyCollection<ILatexElement> OptionalModified { get; }
+        IReadOnlyList<ILatexElement> OptionalModified { get; }
     }
 }
