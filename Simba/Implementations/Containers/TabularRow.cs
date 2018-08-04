@@ -1,5 +1,5 @@
-﻿using System.Text;
-using Simba.Contracts;
+﻿using Simba.Contracts;
+using System.Text;
 
 namespace Simba.Implementations.Containers
 {
