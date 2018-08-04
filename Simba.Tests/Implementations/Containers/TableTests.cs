@@ -11,8 +11,8 @@ namespace Simba.Tests.Implementations.Containers
         [Fact]
         public void GetLatex_Table_CorrectGenerateLatexCode()
         {
-            var table = new Table<Tabular<TabularRow<ILatexElement>>>();
-            var tabular = new Tabular<TabularRow<ILatexElement>>();
+            var table = new Table();
+            var tabular = new Tabular();
             var row = new TabularRow<ILatexElement>();
             row.AddElement(new SimpleText("New element"));
             tabular.AddElement(row);

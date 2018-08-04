@@ -2,7 +2,7 @@
 
 namespace Simba.Implementations.Containers
 {
-    public class Tabular<T> : BaseStructure<T> where T : TabularRow<ILatexElement>
+    public class Tabular : BaseStructure<TabularRow<ILatexElement>>
     {
         protected override string BeginMacroValue => "tabular";
         protected override string EndMacroValue => "tabular";
