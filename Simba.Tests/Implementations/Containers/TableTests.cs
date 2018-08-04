@@ -20,7 +20,7 @@ namespace Simba.Tests.Implementations.Containers
 
             AssertExtensions.CompareLatex(table.GetLatex(),
                                          @"\begin{table}
-                                                \begin{tabular}
+                                                \begin{tabular}{|c|}
                                                     \hline
                                                         New element \\
                                                     \hline

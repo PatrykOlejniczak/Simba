@@ -8,8 +8,8 @@ namespace Simba.Implementations.Containers
         protected abstract string BeginMacroValue { get; }
         protected abstract string EndMacroValue { get; }
 
-        private string BeginMacro => $"\\begin{{{BeginMacroValue}}}";
-        private string EndMacro => $"\\end{{{EndMacroValue}}}";
+        protected string BeginMacro => $"\\begin{{{BeginMacroValue}}}";
+        protected string EndMacro => $"\\end{{{EndMacroValue}}}";
 
         public override string GetLatex()
         {

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Implementations\Modifiers\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

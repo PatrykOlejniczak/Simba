@@ -17,7 +17,7 @@ namespace Simba.Implementations.Containers
             elements = new List<T>();
         }
 
-        public void AddElement(T element)
+        public virtual void AddElement(T element)
         {
             elements.Add(element);
         }
