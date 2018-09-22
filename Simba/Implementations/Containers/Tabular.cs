@@ -1,9 +1,9 @@
 ﻿using Simba.Contracts;
+using Simba.Exceptions;
+using Simba.Types;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Simba.Exceptions;
-using Simba.Types;
 
 namespace Simba.Implementations.Containers
 {

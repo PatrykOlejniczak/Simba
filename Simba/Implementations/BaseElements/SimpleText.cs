@@ -1,5 +1,5 @@
-﻿using System;
-using Simba.Contracts;
+﻿using Simba.Contracts;
+using System;
 
 namespace Simba.Implementations.BaseElements
 {
