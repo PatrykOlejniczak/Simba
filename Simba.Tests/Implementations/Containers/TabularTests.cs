@@ -3,7 +3,7 @@ using Simba.Contracts;
 using Simba.Exceptions;
 using Simba.Implementations.BaseElements;
 using Simba.Implementations.Containers;
-using Simba.Tests.Extensions;
+using Simba.Tests.Utils;
 using Simba.Types;
 using Xunit;
 

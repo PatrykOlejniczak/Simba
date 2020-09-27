@@ -5,16 +5,16 @@ namespace Simba.Implementations.Modifiers
 {
     public class CellColor : ILatexElement
     {
-        private ColorRgb color;
+        private ColorRgb _color;
 
         public CellColor(ColorRgb color)
         {
-            this.color = color;
+            _color = color;
         }
 
         public string GetLatex()
         {
-            return $"\\cellcolor[rgb]{{{color.Red.ToString(CultureInfo.InvariantCulture)},{color.Green.ToString(CultureInfo.InvariantCulture)},{color.Blue.ToString(CultureInfo.InvariantCulture)}}}";
+            return $"\\cellcolor[rgb]{{{_color.Red.ToString(CultureInfo.InvariantCulture)},{_color.Green.ToString(CultureInfo.InvariantCulture)},{_color.Blue.ToString(CultureInfo.InvariantCulture)}}}";
         }
     }
 }

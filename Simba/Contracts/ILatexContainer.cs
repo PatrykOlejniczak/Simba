@@ -2,7 +2,7 @@
 
 namespace Simba.Contracts
 {
-    public interface ILatexContainer<T>
+    public interface ILatexContainer<T> : ILatexElement
     {
         IReadOnlyList<T> Elements { get; }
 

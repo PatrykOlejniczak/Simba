@@ -3,7 +3,8 @@ using System.Text;
 
 namespace Simba.Implementations.Containers
 {
-    public abstract class BaseStructure<T> : BaseContainer<T> where T : ILatexElement
+    public abstract class BaseStructure<T> : BaseContainer<T>
+        where T : ILatexElement
     {
         protected abstract string BeginMacroValue { get; }
         protected abstract string EndMacroValue { get; }
@@ -19,8 +20,8 @@ namespace Simba.Implementations.Containers
                 latex.AppendLine(ElementSeparatorMacro);
                 latex.AppendLine(Elements[index].GetLatex());
             }
-            latex.AppendLine(ElementSeparatorMacro);
-            latex.AppendLine(EndMacro);
+            latex.Append(ElementSeparatorMacro);
+            latex.Append(EndMacro);
 
             return latex.ToString();
         }

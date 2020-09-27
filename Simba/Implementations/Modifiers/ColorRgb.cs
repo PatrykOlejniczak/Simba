@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Globalization;
-using Simba.Contracts;
 
 namespace Simba.Implementations.Modifiers
 {

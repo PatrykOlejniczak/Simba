@@ -1,18 +1,11 @@
 ﻿using Simba.Contracts;
 using Simba.Implementations.BaseElements;
 using Simba.Implementations.Containers;
-using Simba.Tests.Extensions;
+using Simba.Tests.Utils;
 using Xunit;
 
 namespace Simba.Tests.Implementations.Containers
 {
-    public class StructureMock : BaseStructure<ILatexElement>
-    {
-        protected override string BeginMacroValue => "ContainerBeginValue";
-        protected override string EndMacroValue => "ContainerEndValue";
-        protected override string ElementSeparatorMacro => "ContainerSeparatorValue";
-    }
-
     public class BaseStructureTests
     {
         [Fact]
@@ -54,6 +47,13 @@ namespace Simba.Tests.Implementations.Containers
                                                     New element v2
                                                 ContainerSeparatorValue
                                             \end{ContainerEndValue}");
+        }
+
+        private class StructureMock : BaseStructure<ILatexElement>
+        {
+            protected override string BeginMacroValue => "ContainerBeginValue";
+            protected override string EndMacroValue => "ContainerEndValue";
+            protected override string ElementSeparatorMacro => "ContainerSeparatorValue";
         }
     }
 }
