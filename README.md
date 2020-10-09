@@ -17,15 +17,15 @@ var latex = persons.ToLatex();
 ### Result:
 
 ```
-\\begin{table}
-    \\begin{tabular}{|c|c|c|}
-        \\hline
-            John & Smith & 18 \\\\ 
-        \\hline
-            John & Carter & 20 \\\\ 
-        \\hline
-    \\end{tabular}
-\\end{table}
+\begin{table}
+    \begin{tabular}{|c|c|c|}
+        \hline
+            John & Smith & 18 \\
+        \hline
+            John & Carter & 20 \\
+        \hline
+    \end{tabular}
+\end{table}
 ```
 
 ## Contribution
