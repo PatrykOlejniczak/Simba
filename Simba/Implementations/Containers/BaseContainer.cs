@@ -4,22 +4,23 @@ using System.Text;
 
 namespace Simba.Implementations.Containers
 {
-    public abstract class BaseContainer<T> : ILatexContainer<T>, ILatexElement
+    public abstract class BaseContainer<T> : ILatexContainer<T>
         where T : ILatexElement
     {
-        public IReadOnlyList<T> Elements => elements.AsReadOnly();
+        public IReadOnlyList<T> Elements => _elements.AsReadOnly();
 
         protected abstract string ElementSeparatorMacro { get; }
-        private readonly List<T> elements;
+
+        private readonly List<T> _elements;
 
         protected BaseContainer()
         {
-            elements = new List<T>();
+            _elements = new List<T>();
         }
 
         public virtual void AddElement(T element)
         {
-            elements.Add(element);
+            _elements.Add(element);
         }
 
         public virtual string GetLatex()
@@ -28,7 +29,7 @@ namespace Simba.Implementations.Containers
             for(int index = 0; index < Elements.Count; index++)
             {
                 latex.AppendLine(ElementSeparatorMacro);
-                latex.AppendLine(elements[index].GetLatex());
+                latex.AppendLine(_elements[index].GetLatex());
             }
             latex.AppendLine(ElementSeparatorMacro);
 
