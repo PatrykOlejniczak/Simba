@@ -1,12 +1,12 @@
-name: Simba .NET Core
+name: Build & Test Simba .NET Core
 
 on:
   schedule:
     - cron: "0 0 1 * *"
   push:
-    branches: [ master ]
+    branches: [ master, develop  ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, develop ]
     
 jobs:
   build:
