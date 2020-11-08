@@ -4,10 +4,10 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageProjectUrl>https://github.com/PatrykOlejniczak/Simba</PackageProjectUrl>
     <Copyright>MIT</Copyright>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
     <Description>.Net library providing extension method for collection that allow generating latex tables.</Description>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
