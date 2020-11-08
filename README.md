@@ -1,5 +1,5 @@
 # Simba
-.Net library for generating latex tables base on memory objects.
+.Net library providing extension method for collection that allow generating latex tables.
 
 ## Sample
 
